@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Nithin's portfolio</title>
+</head>
+
+<body>
+    <!--This page uses grid system including 12 columns-->
+    <div class="container">
+        <header class="row1">   
+			<!--half of the column is logo-->
+			<div class="col-md-3 display_cancel" >
+				<img class="logo" src="images/icon1.jpg" alt="logo" >
+			</div>    
+			<!--half of the column with the text appear right and all uppercase-->
+			<div class="col-md-9 text-right text-uppercase font-white" >
+				<h1>Nithin Mathew</h1>
+				<h4>Full Stack Web Devevloper</h4>
+			</div>
+			<a id="menu" class="header__menu">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+				</svg>
+            </a>
+			
+		</header>
+		<nav class="navbar">
+				<ul class="topnav">       
+					<li><a class="active" href="#home">Home</a></li>
+					<li><a class="nav_item" href="#resume">Resume</a></li>
+					<li><a class="nav_item" href="#contact">Project</a></li>
+					<li><a class="nav_item" href="#about">About</a></li>
+				</ul>
+		</nav>
+		<hr>
+		<main class="row">
+			<!-- This picture display the whole width and the whole content-->
+			<div class="col-md-12">
+				<picture id="banner">
+					<source media="(max-width: 400px)" srcset="images/img2-800.jpg" />
+					<img class="image1" src="images/img2-1600.jpg" alt="picutre">
+				</picture>
+			</div>
+		</main>
+		<section class="row2">
+            <h3>Featured</h3>
+		</section>
+		<section class="row">
+            <article class="col-md-4 margin-right-10" >     
+                <img class="image1" src="images/img3-800.jpg" srcset="images/img3-800.jpg 2x, images/img3-400.jpg 1x " alt="pic1">
+                <p class="text-center">Image 1</p>
+            </article>
+            <article class="col-md-4 margin-right-10" >
+                <img class="image1" src="images/img4-800.jpg" srcset="images/img4-800.jpg 2x, images/img4-400.jpg 1x " alt="pic2">
+                <p class="text-center">Image 2</p>
+            </article>
+            <article class="col-md-4" >
+                <img class="image1" src="images/img5-800.jpg" srcset="images/img5-800.jpg 2x, images/img5-400.jpg 1x " alt="pic3">
+                <p class="text-center">Image 3</p>
+            </article>
+        </section>
+        
+        <footer>
+            <p class="text-center">Designed by Nithin Mathew</p>
+        </footer>
+	</div>
+</body>
+</html>
