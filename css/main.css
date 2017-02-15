@@ -3,59 +3,49 @@ div {
      margin:0;
      font-family: "Times New Roman", Georgia,"Roboto", sans-serif;   
 }
-.row1{
+/**for 3 different types of rows**/
+.row {
     display: flex;
-    
 }
-.row{
+.row1 {
     display: flex;
-    
 }
-.row2{
+.row2 {
     display: flex;
     background-color: #ecfaf3;
 	height: 30px;
 }
+/**Creating columns by dividing the screen into 12 parts**/
 .col-md-1 {
     width: 8.33%;
 }
-
 .col-md-2 {
     width: 16.66%;
 }
-
 .col-md-3 {
     width: 25%;
 }
-
 .col-md-4 {
     width: 33.33%;
 }
-
 .col-md-5 {
     width: 41.66%;
 }
-
 .col-md-6 {
     width: 50%;
 }
-
 .col-md-7 {
     width: 58.33%;
 }
-
 .col-md-8 {
     width: 66.66%;
 }
-
 .col-md-9 {
     width: 75%;
 }
-
 .col-md-10 {
     width: 83.33%;
 }
-
 .col-md-11 {
     width: 91.66%;
 }
@@ -63,12 +53,10 @@ div {
 .col-md-12 {
     width: 100%;
 }
-
-
+/**Font formatting**/
 .text-right{
     text-align: right;
 }
-
 .text-uppercase{
     text-transform: uppercase;
 }
@@ -76,27 +64,18 @@ div {
 .text-center{
     text-align: center;
 }
-
 .font-bold{
     font-weight: bold;
 }
 
-
 h3 {
     font-size: 16px;
     text-align: left;
-    color: #000000;
+    color: #000;
 	margin-top: 0px;
 	font-weight: normal;
 	font-family: cursive;
 
-}
-
-h2 {
-    font-size: 200%;
-    text-align: left;
-    padding-left: 10px;
-    color: #000000;
 }
 img {
      max-width: 100%;
@@ -105,16 +84,17 @@ img {
 .logo{
     width:100px;
 }
+/**for the navbar**/
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #fff;
 }
-
-ul.topnav li {float: left;}
-
+ul.topnav li {
+	float: left;
+}
 ul.topnav li a {
     display: block;
     color: black;
@@ -122,18 +102,13 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 ul.topnav li a:hover:not(.active) {
     background-color: #607D8B;
     color: white;
 }
-
 ul.topnav li a.active {
     background-color: #607D8B;
     color: white;
-}
-.header__menu {
-  display: none;
 }
 .nav__item {
   box-sizing: border-box;
@@ -144,6 +119,7 @@ ul.topnav li a.active {
   padding: 24px;
   text-transform: uppercase;
 }
+/**For all the images**/
 .image1{
     width: 100%;
 	display: block;
@@ -153,12 +129,16 @@ ul.topnav li a.active {
     margin-right: auto;
     
 }
-.margin-right-10{
+.margin-right-10 {
      margin-right: 10px;
  }
-@media only screen and (max-width: 400px){
-    ul.topnav li {float: none;}
-	.row{
+/**@media queries**/
+/**for screen width less than 400px**/
+@media only screen and (max-width: 400px) {
+    ul.topnav li {
+		float: none;
+	}
+	.row {
         display:flex;
         flex-wrap: wrap;
     }
@@ -166,11 +146,12 @@ ul.topnav li a.active {
 		width: 100%;
 	}
 }
-@media only screen and (min-width: 401px){
-	.font-white{
+/**for screen width more than 400px**/
+@media only screen and (min-width: 401px) {
+	.font-white {
 		color: white;
 	}
-	.row1{
+	.row1 {
 		background-image: url("F:/nanodegree_full stack/project lesson 2/final/images/img1-1600_bg.jpg");
 	}
 	
